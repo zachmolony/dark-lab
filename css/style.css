@@ -1,0 +1,61 @@
+  /* if desktop */
+
+  .mobile_device_380px {
+      display: none;
+  }
+
+  .mobile_device_480px {
+      display: none;
+  }
+
+  /* if mobile device max width 480px */
+
+  @media only screen and (max-device-width: 480px) {
+      .mobile_device_480px {
+          display: block;
+      }
+
+      .mobile_device_380px {
+          display: none;
+      }
+
+      .desktop {
+          display: none;
+      }
+  }
+
+
+  /* DESKTOP RULES */
+
+  html * {
+      background-color: black;
+      font-family: 'Scheherazade', serif;
+  }
+
+  /* unvisited link */
+
+  a:link {
+      color: #00ffff;
+  }
+
+  /* visited link */
+
+  a:visited {
+      color: #00ffff;
+  }
+
+  /* mouse over link */
+
+  a:hover {
+      color: #ff0000;
+  }
+
+  /* selected link */
+
+  a:active {
+      color: palevioletred;
+  }
+
+  body {
+      /*background-image: url("assets/lightning.jpg")*/
+  }
