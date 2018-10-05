@@ -1,9 +1,5 @@
   /* if desktop */
 
-  .mobile_device_380px {
-      display: none;
-  }
-
   .mobile_device_480px {
       display: none;
   }
@@ -15,21 +11,9 @@
           display: block;
       }
 
-      .mobile_device_380px {
-          display: none;
-      }
-
       .desktop {
           display: none;
       }
-  }
-
-
-  /* DESKTOP RULES */
-
-  html * {
-      background-color: black;
-      font-family: 'Scheherazade', serif;
   }
 
   /* unvisited link */
@@ -54,6 +38,13 @@
 
   a:active {
       color: palevioletred;
+  }
+
+  /* DESKTOP RULES */
+
+  html * {
+      background-color: black;
+      font-family: 'Scheherazade', serif;
   }
 
   body {
