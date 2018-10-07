@@ -102,28 +102,26 @@
 
   #store_grid {
       padding-top: 10vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      width: 80%;
       margin: auto;
+      width: 40%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-flow: column;
   }
-
-    .grid-row {
-        padding-top: 30px;
-        align-content: space-between;
-        width: 20vw;
-        margin: auto;
-    }
 
   .grid-row {
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
   }
 
-  .grid-item > img {
-      padding-top: 3vh;
-      padding: 5vw;
-      width: 10vw;
+  .grid-item {
+      padding-left: 10px;
+      padding-right: 10px;
   }
+
+.grid-item {
+    
+}
