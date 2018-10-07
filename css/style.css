@@ -45,6 +45,10 @@
   /* DESKTOP RULES */
 
   * {
+      cursor: url("../assets/cursor.png"), auto;
+  }
+
+  * {
       margin: 0;
       padding: 0;
       border: 0;
