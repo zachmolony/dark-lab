@@ -1,9 +1,5 @@
   /* if desktop */
 
-  .mobile_device_380px {
-      display: none;
-  }
-
   .mobile_device_480px {
       display: none;
   }
@@ -15,21 +11,9 @@
           display: block;
       }
 
-      .mobile_device_380px {
-          display: none;
-      }
-
       .desktop {
           display: none;
       }
-  }
-
-
-  /* DESKTOP RULES */
-
-  html * {
-      background-color: black;
-      font-family: 'Scheherazade', serif;
   }
 
   /* unvisited link */
@@ -56,6 +40,90 @@
       color: palevioletred;
   }
 
-  body {
-      /*background-image: url("assets/lightning.jpg")*/
+
+
+  /* DESKTOP RULES */
+
+  * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+      line-height: 1.6;
+      font-size: 2vw;
+  }
+
+  .main {
+      display: block;
+      background-image: url("assets/sky.gif")
+  }
+
+  html * {
+      font-family: 'Scheherazade', serif;
+      color: white;
+  }
+
+  #showcase {
+      background-image: url("../assets/sky.gif");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .overlay {
+      position: absolute;
+      min-height: 100%;
+      min-width: 100%;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.7);
+  }
+
+  .skull {
+      width: 10vh;
+      padding-top: 2vw;
+      padding-left: 1vw;
+      position: absolute;
+  }
+
+  #imglogo {
+      width: 25vh;
+  }
+
+
+
+
+  #store_grid {
+      padding-top: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+  }
+
+    .grid-row {
+        padding-top: 30px;
+        align-content: space-between;
+        width: 20vw;
+        margin: auto;
+    }
+
+  .grid-row {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .grid-item > img {
+      padding-top: 3vh;
+      padding: 5vw;
+      width: 10vw;
   }
