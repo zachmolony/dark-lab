@@ -136,9 +136,16 @@
   }
 
   .grid-item {
+      position: relative;
+      display: inline-block;
       padding-left: 10px;
       padding-right: 10px;
   }
+
+.grid-item img {
+    max-width: 225px;
+    min-width: 225px;
+}
 
   .logo {
       display: block;
@@ -156,8 +163,15 @@
       justify-content: space-between;
   }
 
+  .storelogo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+  }
 
 
+/* MOBILE */ 
 
 
   .skull_mob {
