@@ -6,7 +6,7 @@
 
   /* if mobile device max width 480px */
 
-  @media only screen and (max-device-width: 480px) {
+  @media only screen and (max-device-width: 780px) {
       .mobile_device_480px {
           display: block;
       }
@@ -16,6 +16,16 @@
       }
   }
 
+<<<<<<< HEAD
+=======
+
+  a {
+      padding-top: 1vh;
+      padding-bottom: 5vh;
+      font-size: 3vh;
+  }
+
+>>>>>>> efcf2bfdafe12f46ee97780eb51b36152ecaa98b
   /* unvisited link */
 
   a:link {
@@ -37,9 +47,45 @@
   /* selected link */
 
   a:active {
-      color: palevioletred;
+      color: 00ffff;
   }
 
+
+
+  /* DESKTOP RULES */
+
+  * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+      line-height: 1.6;
+      font-size: 2vw;
+      cursor: url("../assets/cursor.png"), auto;
+  }
+
+  .main {
+      display: block;
+      background-image: url("assets/sky.gif")
+  }
+
+  html * {
+      font-family: 'Scheherazade', serif;
+      color: white;
+  }
+
+  p1 {
+      font-size: 15px;
+  }
+
+  enter {
+      font-size: 2vh;
+  }
+
+<<<<<<< HEAD
   /* DESKTOP RULES */
 
   html * {
@@ -50,3 +96,78 @@
   body {
       /*background-image: url("assets/lightning.jpg")*/
   }
+=======
+  #showcase {
+      background-image: url("../assets/sky.gif");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .skull {
+      width: 10vh;
+      padding-top: 2vw;
+      padding-left: 1vw;
+      position: absolute;
+  }
+
+  #imglogo {
+      width: 30vh;
+  }
+
+
+
+  #store_grid {
+      padding-top: 10vh;
+      margin: auto;
+      width: 40%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-flow: column;
+  }
+
+  .grid-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .grid-item {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 15%;
+      margin-top: 40px;
+  }
+
+  .store_nav_bar {
+      width: 20%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+  }
+
+
+
+
+
+  .skull_mob {
+      padding-bottom: -10px;
+  }
+
+  #mobimg {
+      width: 65%;
+  }
+>>>>>>> efcf2bfdafe12f46ee97780eb51b36152ecaa98b
