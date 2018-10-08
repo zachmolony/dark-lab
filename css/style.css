@@ -16,16 +16,12 @@
       }
   }
 
-<<<<<<< HEAD
-=======
-
   a {
       padding-top: 1vh;
       padding-bottom: 5vh;
       font-size: 3vh;
   }
 
->>>>>>> efcf2bfdafe12f46ee97780eb51b36152ecaa98b
   /* unvisited link */
 
   a:link {
@@ -96,7 +92,8 @@
   body {
       /*background-image: url("assets/lightning.jpg")*/
   }
-=======
+
+
   #showcase {
       background-image: url("../assets/sky.gif");
       background-size: cover;
@@ -170,4 +167,3 @@
   #mobimg {
       width: 65%;
   }
->>>>>>> efcf2bfdafe12f46ee97780eb51b36152ecaa98b
