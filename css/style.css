@@ -20,30 +20,31 @@
       padding-top: 1vh;
       padding-bottom: 5vh;
       font-size: 3vh;
+      text-decoration: none
   }
 
   /* unvisited link */
 
   a:link {
-      color: #00ffff;
+      color: #ff1414;
   }
 
   /* visited link */
 
   a:visited {
-      color: #00ffff;
+      color: #ff1414;
   }
 
   /* mouse over link */
 
   a:hover {
-      color: #ff0000;
+      color: #ff1414;
   }
 
   /* selected link */
 
   a:active {
-      color: 00ffff;
+      color: ff1414;
   }
 
 
@@ -94,15 +95,12 @@
   }
 
 
-  #showcase {
+  #mob_container {
       background-image: url("../assets/sky.gif");
       background-size: cover;
       background-position: center;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      position: relative;
   }
 
   .skull {
@@ -181,3 +179,11 @@
   #mobimg {
       width: 65%;
   }
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
