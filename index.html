@@ -34,10 +34,9 @@
     <script>
         $(document).ready(function() {
             $(".button").click(function() {
-
                 $(".skull_mob").fadeOut();
                 $(".button").fadeOut();
-                $("#mobimg").animate({top: 100});
+                setTimeout(function() {$("#mobimg").animate({top: 100})}, 1000);
             });
         });
 
