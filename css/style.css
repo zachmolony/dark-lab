@@ -173,11 +173,13 @@
   }
 
   .skull_mob {
-      padding-bottom: -10px;
+      margin-bottom: 120px;
   }
 
   #mobimg {
+      position: absolute;
       width: 65%;
+      padding-top: 20px;
   }
 
 #header {
@@ -217,4 +219,8 @@
 
 #header-container {
     position: absolute;
+}
+
+.button {
+    padding-top: -10vh;
 }
