@@ -30,11 +30,21 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="assets/icons//favicon-144.png">
     <meta name="msapplication-config" content="assets/icons//browserconfig.xml">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".button").click(function() {
+
+                $(".skull_mob").fadeOut();
+                $(".button").fadeOut();
+                $("#mobimg").animate({top: 100});
+            });
+        });
+
+    </script>
 </head>
 
-<style>
-
-</style>
+<style></style>
 
 <body>
     <div id="content">
