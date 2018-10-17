@@ -83,13 +83,12 @@
 
 
   html * {
-      background-color: black;
       font-family: 'Scheherazade', serif;
   }
 
   body {
+      background-color: transparent;
       height: 100vh;
-      position: relative;
   }
 
   .container {
@@ -208,7 +207,6 @@
   }
 
   #store {
-      z-index: -1;
       position: absolute;
       left: 0;
       right: 0;
