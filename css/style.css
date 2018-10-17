@@ -88,11 +88,6 @@
   }
 
   body {
-      background-image: url("../assets/sky.gif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed !important;
       height: 100vh;
       position: relative;
   }
@@ -237,3 +232,11 @@
       margin-left: auto;
       margin-right: auto;
   }
+
+#background {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: auto;
+    z-index: -5;
+}
