@@ -36,14 +36,20 @@
             $(".button").click(function() {
                 $(".skull_mob").fadeOut();
                 $(".button").fadeOut();
-                setTimeout(function() {$("#mobimg").animate({top: 100})}, 1000);
+                var div = $("#store");
+                setTimeout(function() {
+                    $("#mobimg").animate({
+                        top: 100
+                    })
+                }, 1000);
+                setTimeout(function() {
+                    $("#store").fadeIn();
+                }, 1500);
             });
         });
-
     </script>
 </head>
 
-<style></style>
 
 <body>
     <div id="content">
