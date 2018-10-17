@@ -36,18 +36,22 @@
             $(".button").click(function() {
                 $(".skull_mob").fadeOut();
                 $(".button").fadeOut();
+
                 var div = $("#store");
                 setTimeout(function() {
                     $("#mobimg").animate({
                         top: 100
-                    }, 200)
+                    }, 900)
                 }, 800);
+                
                 setTimeout(function() {
-                    $("#store").fadeIn();
-                }, 850);
+                    $("#store").animate({
+                        top: 0
+                    }, {duration:300, queue:false});
+                    $("#store").fadeIn({duration: 450, queue:false});
+                }, 1400);
             });
         });
-
     </script>
 </head>
 
@@ -59,8 +63,6 @@
 
             <div class="overlay">
                 <div class="container">
-
-
 
                     <header id="header">
                         <div class="skull_mob">
@@ -76,11 +78,10 @@
                 </div>
             </div>
 
-
-
-
         </div>
 
+       
+       
         <div class="mobile_device_480px">
 
             <div id="mob_container">
