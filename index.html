@@ -43,14 +43,26 @@
                         top: 100
                     }, 900)
                 }, 800);
-                
+
                 setTimeout(function() {
                     $("#store").animate({
                         top: 0
-                    }, {duration:300, queue:false});
-                    $("#store").fadeIn({duration: 450, queue:false});
+                    }, {
+                        duration: 300,
+                        queue: false
+                    });
+                    $("#store").fadeIn({
+                        duration: 450,
+                        queue: false
+                    });
                 }, 1400);
+                setTimeout(function() {
+                    $("#nav").fadeIn({
+                        duration: 250
+                    });
+                }, 1800);
             });
+            $()
         });
     </script>
 </head>
@@ -80,14 +92,46 @@
 
         </div>
 
-       
-       
+
+
         <div class="mobile_device_480px">
 
             <div id="mob_container">
-            
+
                 <img id="background" src="assets/sky.gif" alt="">
 
+                <div id="nav">
+                    <div class="dropdown">
+                        <button onclick="dropmenu()" class="ddbutton"><img id="menu" src="assets/menuicon.png" alt=""></button>
+                        <div id="dd-menu" class="dropdown-content">
+                            <a href="about.html">about</a>
+                            <a href="#">somthing</a>
+                        </div>
+                    </div>
+
+                    <script>
+                        function myFunction() {
+                            document.getElementById("dropdown").classList.toggle("show");
+                        }
+
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                            if (!event.target.matches('.ddbutton')) {
+
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+
+                    <img id="cart" src="assets/carticon.png" alt="">
+                </div>
 
                 <div id="mob_header">
                     <div class="skull_mob">
