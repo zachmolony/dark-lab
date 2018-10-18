@@ -173,7 +173,6 @@
   #mobimg {
       position: absolute;
       width: 56%;
-      padding-top: 20px;
   }
 
   #header {
@@ -217,6 +216,7 @@
       padding-top: 16vh;
       display: none;
       overflow: scroll;
+      -webkit-overflow-scrolling: touch;
   }
 
   .item_container {
@@ -238,3 +238,37 @@
     width: auto;
     z-index: -5;
 }
+
+#menu, #cart {
+    position: absolute;
+    width: 6vw;
+    filter: invert(1);
+}
+
+#menu {
+    padding-top: 11vw;
+    margin-left: 8vw;
+}
+
+#cart {
+    padding-top: 13vw;
+    margin-left: 85vw;
+}
+
+#nav {
+    height: 0px;
+    display: none;
+}
+
+.dropdown {
+    position: absolute;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+
+.show {display: block;}
