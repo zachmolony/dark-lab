@@ -173,6 +173,7 @@
   #mobimg {
       position: absolute;
       width: 56%;
+      padding-top: 2vh;
   }
 
   #header {
@@ -201,9 +202,7 @@
       position: absolute;
   }
 
-  .button {
-      padding-top: -10vh;
-  }
+
 
   #store {
       position: absolute;
