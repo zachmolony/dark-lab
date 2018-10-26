@@ -58,13 +58,8 @@
       outline: 0;
       font-size: 100%;
       font-size: 2vw;
-      cursor: url("../assets/cursor.png"), auto;
   }
 
-  .main {
-      display: block;
-      background-image: url("assets/sky.gif")
-  }
 
   html * {
       font-family: 'Scheherazade', serif;
@@ -90,6 +85,15 @@
       background-color: transparent;
       height: 100vh;
   }
+
+.showcase {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+}
+
 
   .container {
       display: flex;
@@ -271,3 +275,23 @@
 }
 
 .show {display: block;}
+
+.details {
+    width: 43%;
+    padding-top: 2.5em;
+}
+
+.details p {
+    font-size: 30px;
+}
+
+.details button {
+    font-size: 22px;
+}
+
+.add2cart {
+    float: right;
+    height: 45px;
+    width: 35%;
+    background-color: rgba(255, 0, 0, 0.76);
+}
