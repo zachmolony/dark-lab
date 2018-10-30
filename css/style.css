@@ -302,7 +302,7 @@ p2 {
 }
 
 .item {
-    padding-top: 18vh;
+    padding-top: 7vh;
 }
 
 .item > *{
@@ -320,3 +320,19 @@ p2 {
 }
 
 
+
+
+
+.text-logo-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10.5vw;
+    width: 56%;
+}
+
+
+
+#logo-firstload {
+    display: none;
+}
