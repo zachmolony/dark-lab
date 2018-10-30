@@ -33,35 +33,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            $(".button").click(function() {
-                $(".skull_mob").fadeOut();
-                $(".button").fadeOut();
+            var firstLoad = null;
+            if (firstLoad === null) {
+                $(".button").click(function() {
+                    $(".skull_mob").fadeOut();
+                    $(".button").fadeOut();
 
-                setTimeout(function() {
-                    $("#mobimg").animate({
-                        top: 65
-                    }, 900)
-                }, 800);
+                    setTimeout(function() {
+                        $("#mobimg").animate({
+                            top: 65
+                        }, 900)
+                    }, 800);
 
-                setTimeout(function() {
-                    $("#store").animate({
-                        top: 0
-                    }, {
-                        duration: 300,
-                        queue: false
-                    });
-                    $("#store").fadeIn({
-                        duration: 450,
-                        queue: false
-                    });
-                }, 1400);
-                setTimeout(function() {
-                    $("#nav").fadeIn({
-                        duration: 250
-                    });
-                }, 1800);
-            });
-            $()
+                    setTimeout(function() {
+                        $("#store").animate({
+                            top: 0
+                        }, {
+                            duration: 300,
+                            queue: false
+                        });
+                        $("#store").fadeIn({
+                            duration: 450,
+                            queue: false
+                        });
+                    }, 1400);
+                    setTimeout(function() {
+                        $("#nav").fadeIn({
+                            duration: 250
+                        });
+                    }, 1800);
+                });
+            } else {
+                document.getElementById('mob_header').style.display="none";
+                document.getElementById('store').style.top=0;
+                document.getElementById('store').style.display="block";
+                document.getElementById('nav').style.display="block";
+                document.getElementById('logo-firstload').style.display="block";
+            }
         });
     </script>
 </head>
@@ -83,8 +91,6 @@
                 <img id="textlogo" src="assets/DARKLAB.png" alt="">
                 <a href="#" class="button">enter store.</a>
             </div>
-
-
         </div>
 
 
@@ -104,27 +110,6 @@
                         </div>
                     </div>
 
-                    <script>
-                        function myFunction() {
-                            document.getElementById("dropdown").classList.toggle("show");
-                        }
-
-                        // Close the dropdown if the user clicks outside of it
-                        window.onclick = function(event) {
-                            if (!event.target.matches('.ddbutton')) {
-
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                    var openDropdown = dropdowns[i];
-                                    if (openDropdown.classList.contains('show')) {
-                                        openDropdown.classList.remove('show');
-                                    }
-                                }
-                            }
-                        }
-                    </script>
-
                     <img id="cart" src="assets/carticon.png" alt="">
                 </div>
 
@@ -135,6 +120,10 @@
 
                     <img id="mobimg" src="assets/DARKLAB.png" alt="">
                     <a href="#" class="button">enter store.</a>
+                </div>
+                
+                <div id="logo-firstload">
+                    <img class="text-logo-2" src="assets/DARKLAB.png" alt="">
                 </div>
 
                 <div id="store">
