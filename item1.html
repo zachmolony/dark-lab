@@ -31,10 +31,30 @@
     <meta name="msapplication-TileImage" content="assets/icons//favicon-144.png">
     <meta name="msapplication-config" content="assets/icons//browserconfig.xml">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.ddbutton')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <style>
-    #mobimg {
+    #mob-logo-landing {
         top: 62px;
     }
 
@@ -48,14 +68,15 @@
         display: block;
     }
 
-    .item-page-desc > p {
+    .item-page-desc>p {
         font-size: 45px;
     }
-    
-    .item-page-desc p, p2 {
+
+    .item-page-desc p,
+    p2 {
         padding-top: 4vh;
     }
-    
+
     .add2cart {
         float: none;
         margin-top: 4vh;
@@ -63,6 +84,9 @@
         margin-right: auto;
     }
     
+    .header {
+        display: block;
+    }
 </style>
 
 <body>
@@ -81,8 +105,6 @@
                 <img id="textlogo" src="assets/DARKLAB.png" alt="">
                 <a href="#" class="button">enter store.</a>
             </div>
-
-
         </div>
 
 
@@ -93,53 +115,34 @@
 
                 <img id="background" src="assets/sky.gif" alt="">
 
-                <div id="nav">
-                    <div class="dropdown">
-                        <button onclick="dropmenu()" class="ddbutton"><img id="menu" src="assets/menuicon.png" alt=""></button>
-                        <div id="dd-menu" class="dropdown-content">
-                            <a href="about.html">about</a>
-                            <a href="#">somthing</a>
+                <div class="header">
+                    <div id="nav">
+                        <div class="dropdown">
+                            <button onclick="dropmenu()" class="ddbutton"><img id="menu" src="assets/menuicon.png" alt=""></button>
+                            <div id="dd-menu" class="dropdown-content">
+                                <a href="about.html">about</a>
+                                <a href="#">somthing</a>
+                            </div>
                         </div>
+
+                        <img id="cart" src="assets/carticon.png" alt="">
                     </div>
-
-                    <script>
-                        function myFunction() {
-                            document.getElementById("dropdown").classList.toggle("show");
-                        }
-
-                        // Close the dropdown if the user clicks outside of it
-                        window.onclick = function(event) {
-                            if (!event.target.matches('.ddbutton')) {
-
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                    var openDropdown = dropdowns[i];
-                                    if (openDropdown.classList.contains('show')) {
-                                        openDropdown.classList.remove('show');
-                                    }
-                                }
-                            }
-                        }
-                    </script>
-
-                    <img id="cart" src="assets/carticon.png" alt="">
+                    <a href="index.html">
+                        <div id="logo-item">
+                    <img class="text-logo-2" src="assets/DARKLAB.png" alt="">
                 </div>
-                <a href="index.html">
-                    <div id="mob_header">
-                        <img id="mobimg" src="assets/DARKLAB.png" alt="">
-                    </div>
-                </a>
+                    </a>
+                </div>
 
-                    <div class="item">
-                        <img src="assets/items/tee_black.png" alt="">
-                        <div class="item-page-desc">
-                            <p>Example tee</p>
-                            <p2>Wow this is such a noce shirt damn wow look at that oh my god thats really great wow just so great</p2>
-                            <p>£32</p>
-                            <button class="add2cart">add to cart</button>
-                        </div>
+                <div class="item">
+                    <img src="assets/items/tee_black.png" alt="">
+                    <div class="item-page-desc">
+                        <p>Example tee</p>
+                        <p2>Wow this is such a noce shirt damn wow look at that oh my god thats really great wow just so great</p2>
+                        <p>£32</p>
+                        <button class="add2cart">add to cart</button>
                     </div>
+                </div>
 
             </div>
 
