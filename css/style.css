@@ -176,7 +176,8 @@
 
   #mobimg {
       position: absolute;
-      width: 38%;
+      width: 68%;
+      padding-left: 3vw;
       padding-top: 1.8vh;
   }
 
