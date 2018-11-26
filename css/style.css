@@ -176,9 +176,9 @@
 
   #mobimg {
       position: absolute;
-      width: 68%;
-      padding-left: 3vw;
-      padding-top: 1.8vh;
+      width: 56%;
+      padding-top: 56px;
+      filter: invert(100);
   }
 
   #header {
@@ -328,12 +328,19 @@ p2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10.5vw;
+    padding-top: 12.5vw;
     width: 56%;
+    filter: invert(100);
 }
 
 
 
 #logo-firstload {
     display: none;
+}
+
+
+
+.skull_mob > * {
+    padding-top: 30px;
 }
