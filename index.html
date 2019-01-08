@@ -64,14 +64,53 @@
                     }, 1800);
                 });
             } else {
-                document.getElementById('mob_header').style.display="none";
-                document.getElementById('store').style.top=0;
-                document.getElementById('store').style.display="block";
-                document.getElementById('nav').style.display="block";
-                document.getElementById('logo-firstload').style.display="block";
+                document.getElementById('mob_header').style.display = "none";
+                document.getElementById('store').style.top = 0;
+                document.getElementById('store').style.display = "block";
+                document.getElementById('nav').style.display = "block";
+                document.getElementById('logo-firstload').style.display = "block";
             }
         });
     </script>
+    <style>
+        @media only screen and (max-width: 40em) {
+            #nav {
+                position: relative;
+            }
+
+            #nav>a {}
+
+            #nav:not( :target)>a:first-of-type,
+            #nav:target>a:last-of-type {
+                display: block;
+            }
+
+            /* first level */
+
+            #nav>ul {
+                height: auto;
+                display: none;
+                position: absolute;
+                left: 0;
+                right: 0;
+            }
+
+            #nav:target>ul {
+                display: block;
+            }
+
+            #nav>ul>li {
+                width: 100%;
+                float: none;
+            }
+
+            /* second level */
+
+            #nav li ul {
+                position: static;
+            }
+        }
+    </style>
 </head>
 
 
@@ -83,12 +122,12 @@
             <img id="background" src="assets/sky.gif" alt="">
 
 
-            <div id="showcase">
-                <div class="skull">
+            <div id="d_showcase">
+                <div class="d_skull">
                     <img src="assets/skull.gif" alt="">
                 </div>
 
-                <img id="textlogo" src="assets/DARKLAB.png" alt="">
+                <img id="d_logo" src="assets/logo-stamp.png" alt="">
                 <a href="#" class="button">enter store.</a>
             </div>
         </div>
@@ -101,7 +140,7 @@
 
                 <img id="background" src="assets/sky.gif" alt="">
 
-                <div id="nav">
+                <div id="nav" role="navigation">
                     <div class="dropdown">
                         <button onclick="dropmenu()" class="ddbutton"><img id="menu" src="assets/menuicon.png" alt=""></button>
                         <div id="dd-menu" class="dropdown-content">
@@ -121,7 +160,7 @@
                     <img id="mobimg" src="assets/logo-rough.png" alt="">
                     <a href="#" class="button">enter store.</a>
                 </div>
-                
+
                 <div id="logo-firstload">
                     <img class="text-logo-2" src="assets/logo-alt3.png" alt="">
                 </div>
