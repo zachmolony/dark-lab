@@ -71,6 +71,32 @@
                 document.getElementById('logo-firstload').style.display = "block";
             }
         });
+
+        $(document).ready(function() {
+                $(".d_button").click(function() {
+                        $(".d_skull").fadeOut();
+                        $(".d_button").fadeOut();
+
+                        setTimeout(function() {
+                            $("#d_logo").animate({
+                                paddingTop: -1000 px;
+                            }, 900)
+                        }, 800);
+
+                        setTimeout(function() {
+                            $("#store").animate({
+                                top: 0
+                            }, {
+                                duration: 300,
+                                queue: false
+                            });
+                            $("#store").fadeIn({
+                                duration: 450,
+                                queue: false
+                            });
+                        }, 1400);
+                });
+        });
     </script>
     <style>
         @media only screen and (max-width: 40em) {
