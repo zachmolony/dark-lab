@@ -1,11 +1,9 @@
-
 $(document).ready(function () {
     if (sessionStorage.getItem('firstLoad')) {
-        document.getElementById('mob_header').style.display = "none";
-        document.getElementById('store').style.top = 0;
-        document.getElementById('store').style.display = "block";
-        document.getElementById('nav').style.display = "block";
-        document.getElementById('logo-firstload').style.display = "block";
+        $('#mob_header').css('display', 'none');
+        $('#store').css({'top':'0', 'display':'block'});
+        $('#nav').css('display', 'block');
+        $('#logo-firstload').css('display', 'block');
     } else {
         $(".button").click(function () {
             sessionStorage.setItem('firstLoad',  true);
@@ -38,3 +36,11 @@ $(document).ready(function () {
         });
     }
 });
+
+function dropmenu() {
+    if ($('.dropdown-content').css('display') == 'block') {
+        $('.dropdown-content').css({'display':'none'});
+    } else {
+        $('.dropdown-content').css({'display':'block'})
+    }
+};
