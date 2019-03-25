@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
 
 <head>
     <title>DARK-LAB</title>
     <link rel="icon" href="assets/favicon.ico">
     <meta name="keywords" content="dark lab, darklab, dark, clothing, lab">
     <meta name="description" content="">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124206276-1"></script>
     <!-- ****** favicons ****** -->
     <link rel="shortcut icon" href="/favicon.ico">
@@ -31,43 +31,27 @@
     <meta name="msapplication-TileImage" content="assets/icons//favicon-144.png">
     <meta name="msapplication-config" content="assets/icons//browserconfig.xml">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
 
+<style>
+.about {
+    z-index: 10;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: black;
+    border: 1px solid #ff1414;
+}
+
+p {
+    padding: 5vw;
+}
+
+</style>
 
 <body>
-    <script>
-        $(document).ready(function () {
-                $(".button").click(function () {
-                    $(".button").fadeOut();
-
-                    setTimeout(function () {
-                        $("#store").animate({
-                            top: 0
-                        }, {
-                            duration: 300,
-                            queue: false
-                        });
-                        $("#store").fadeIn({
-                            duration: 450,
-                            queue: false
-                        });
-                    }, 1400);
-                });
-            }
-        );
-
-        function dropmenu() {
-            if ($('.dropdown-content').css('display') == 'block') {
-                $('.dropdown-content').css({
-                    'display': 'none'
-                });
-            } else {
-                $('.dropdown-content').css({
-                    'display': 'block'
-                })
-            }
-        };
-    </script>
+    <script src="main.js"></script>
     <div id="content">
 
         <div class="desktop">
@@ -81,7 +65,7 @@
                 </div>
 
                 <img id="textlogo" src="assets/logo-rough.png" alt="">
-                <a href="#" class="button">enter email.</a>
+                <a href="#" class="button">enter store.</a>
             </div>
         </div>
 
@@ -108,8 +92,14 @@
                     </div>
 
                     <img id="mobimg" src="assets/logo-rough.png" alt="">
-                    <a href="#" class="button">enter email.</a>
+                    <a href="#" class="button">enter store.</a>
                 </div>
+
+                <div id="logo-firstload">
+                    <img class="text-logo-2" src="assets/logo-stamp.png" alt="">
+                </div>
+
+
 
                 <div id="store">
 
@@ -121,6 +111,11 @@
                         </ul>
                     </div>
 
+                    <div class="about">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam officia sunt dicta? Error eaque tempora ipsa esse quaerat deserunt modi excepturi vitae nam facilis cupiditate possimus, suscipit expedita provident perferendis!</p>
+
+                    </div>
+                    
                 </div>
 
             </div>

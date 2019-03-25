@@ -66,6 +66,14 @@
       color: white;
   }
 
+  p {
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    font-size: 3vh;
+    text-decoration: none;
+    color: #ff1414;
+  }
+
   p1 {
       font-size: 15px;
   }
@@ -271,9 +279,10 @@
       margin-top: -2.2vh;
       margin-left: 0vw;
       padding-left: 10vw;
-      width: 100vw;
+      width: 90vw;
       background-color: rgb(0, 0, 0);
       border: 1px solid #ff1414;
+      margin-bottom: 2vh;
   }
 
   ul {
