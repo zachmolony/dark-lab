@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/zachmolony/dark-lab#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "webpack": "^4.29.6",
