@@ -19,5 +19,8 @@
   "homepage": "https://github.com/zachmolony/dark-lab#readme",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6"
   }
 }
