@@ -4,4 +4,5 @@
 - jQuery
 - Webkit
 - Express
-- MailChimp
+- MailChimp API
+- Body-parser
