@@ -1,1 +1,7 @@
-Hosting moved to AWS
+## Built with
+
+- Node.js
+- jQuery
+- Webkit
+- Express
+- MailChimp
