@@ -6,8 +6,10 @@
     <link rel="icon" href="assets/favicon.ico">
     <meta name="keywords" content="dark lab, darklab, dark, clothing, lab">
     <meta name="description" content="">
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124206276-1"></script>
     <!-- ****** favicons ****** -->
     <link rel="shortcut icon" href="/favicon.ico">
@@ -37,24 +39,24 @@
 <body>
     <script>
         $(document).ready(function () {
-                $(".button").click(function () {
-                    $(".button").fadeOut();
+            $(".button").click(function () {
+                $("#img").fadeOut();
+                $(".button").fadeOut();
 
-                    setTimeout(function () {
-                        $("#store").animate({
-                            top: 0
-                        }, {
-                            duration: 300,
-                            queue: false
-                        });
-                        $("#store").fadeIn({
-                            duration: 450,
-                            queue: false
-                        });
-                    }, 1400);
-                });
-            }
-        );
+                setTimeout(function () {
+                    $(".skull").animate({
+                        top: 950
+                    });
+                }, 1000);
+
+                setTimeout(function () {
+                    $("#form").fadeIn({
+                        duration: 450,
+                        queue: false
+                    });
+                }, 1500);
+            });
+        });
 
         function dropmenu() {
             if ($('.dropdown-content').css('display') == 'block') {
@@ -68,12 +70,12 @@
             }
         };
     </script>
+    <script type="text/javascript" src="./js/build.js"></script>
     <div id="content">
 
         <div class="desktop">
 
             <img id="background" src="assets/sky.gif" alt="">
-
 
             <div id="showcase">
                 <div class="skull">
@@ -81,7 +83,10 @@
                 </div>
 
                 <img id="textlogo" src="assets/logo-rough.png" alt="">
-                <a href="#" class="button">enter email.</a>
+                <div id="enter">
+                    <a id="enter" href="#" class="button">enter email.</a>
+                </div>
+
             </div>
         </div>
 
@@ -102,13 +107,21 @@
                     <img id="cart" src="assets/carticon.png" alt="">
                 </div>
 
-                <div id="mob_header">
-                    <div class="skull_mob">
-                        <img src="assets/skull.gif" alt="">
-                    </div>
+                <div class="skull">
+                    <img src="assets/skull.gif" alt="">
+                </div>
 
-                    <img id="mobimg" src="assets/logo-rough.png" alt="">
+                <div id="header">
+                    <img id="img" src="assets/logo-rough.png" alt="">
+
                     <a href="#" class="button">enter email.</a>
+                </div>
+
+                <div class="form">
+                    <form id="form" action="/" method="POST" style="display:none">
+                        <input id="email" type="email" name="email">
+                        <input id="submit" type="submit" name="submit" value="submit.">
+                    </form>
                 </div>
 
                 <div id="store">

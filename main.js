@@ -1,17 +1,16 @@
 $(document).ready(function () {
-    if (sessionStorage.getItem('firstLoad')) {
-        $('#mob_header').css('display', 'none');
+    if (!sessionStorage.getItem('firstLoad')) {
+        $('#header').css('display', 'none');
         $('#store').css({'top':'0', 'display':'block'});
         $('#nav').css('display', 'block');
-        $('#logo-firstload').css('display', 'block');
     } else {
         $(".button").click(function () {
             sessionStorage.setItem('firstLoad',  true);
-            $(".skull_mob").fadeOut();
+            $(".skull").fadeOut();
             $(".button").fadeOut();
 
             setTimeout(function () {
-                $("#mobimg").animate({
+                $("#img").animate({
                     top: 65
                 }, 900)
             }, 800);
