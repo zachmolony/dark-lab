@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
 
 <head>
     <title>DARK-LAB</title>
     <link rel="icon" href="assets/favicon.ico">
     <meta name="keywords" content="dark lab, darklab, dark, clothing, lab">
     <meta name="description" content="">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124206276-1"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124206276-1"></script>
     <!-- ****** favicons ****** -->
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
@@ -34,18 +33,49 @@
     <meta name="msapplication-TileImage" content="assets/icons//favicon-144.png">
     <meta name="msapplication-config" content="assets/icons//browserconfig.xml">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js"></script>
 </head>
 
 
 <body>
-    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".button").click(function () {
+                $("#img").fadeOut();
+                $(".button").fadeOut();
+
+                setTimeout(function () {
+                    $(".skull").animate({
+                        top: 950
+                    });
+                }, 1000);
+
+                setTimeout(function () {
+                    $("#form").fadeIn({
+                        duration: 450,
+                        queue: false
+                    });
+                }, 1500);
+            });
+        });
+
+        function dropmenu() {
+            if ($('.dropdown-content').css('display') == 'block') {
+                $('.dropdown-content').css({
+                    'display': 'none'
+                });
+            } else {
+                $('.dropdown-content').css({
+                    'display': 'block'
+                })
+            }
+        };
+    </script>
+    <script type="text/javascript" src="./js/build.js"></script>
     <div id="content">
 
         <div class="desktop">
 
             <img id="background" src="assets/sky.gif" alt="">
-
 
             <div id="showcase">
                 <div class="skull">
@@ -53,7 +83,10 @@
                 </div>
 
                 <img id="textlogo" src="assets/logo-rough.png" alt="">
-                <a href="#" class="button">enter store.</a>
+                <div id="enter">
+                    <a id="enter" href="#" class="button">enter email.</a>
+                </div>
+
             </div>
         </div>
 
@@ -61,7 +94,7 @@
 
         <div class="mobile_device_480px">
 
-            <div id="container">
+            <div id="mob_container">
 
                 <img id="background" src="assets/sky.gif" alt="">
 
@@ -74,13 +107,21 @@
                     <img id="cart" src="assets/carticon.png" alt="">
                 </div>
 
-                <div id="header">
-                    <div class="skull">
-                        <img src="assets/skull.gif" alt="">
-                    </div>
+                <div class="skull">
+                    <img src="assets/skull.gif" alt="">
+                </div>
 
+                <div id="header">
                     <img id="img" src="assets/logo-rough.png" alt="">
-                    <a href="#" class="button">enter store.</a>
+
+                    <a href="#" class="button">enter email.</a>
+                </div>
+
+                <div class="form">
+                    <form id="form" action="/" method="POST" style="display:none">
+                        <input id="email" type="email" name="email">
+                        <input id="submit" type="submit" name="submit" value="submit.">
+                    </form>
                 </div>
 
                 <div id="store">
@@ -92,47 +133,7 @@
                             <li><a href="contact.html">contact</a></li>
                         </ul>
                     </div>
-                    
-                    <!-- item 1 -->
-                    <a href="item1.html">
-                        <div class="item_container">
-                            <img src="assets/items/tee_black.png" alt="">
-                            <div class="details">
-                                <button class="add2cart">add to cart</button>
-                                <p>Example tee <br> £32</p>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- item 2 -->
-                    <a href="item1.html">
-                        <div class="item_container">
-                            <img src="assets/items/sweats2.png" alt="">
-                            <div class="details">
-                                <button class="add2cart">add to cart</button>
-                                <p>Example pants <br> £68</p>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- item 3 -->
-                    <a href="item1.html">
-                        <div class="item_container">
-                            <img src="assets/items/sweats2.png" alt="">
-                            <div class="details">
-                                <button class="add2cart">add to cart</button>
-                                <p>Example pants <br> £68</p>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- item 4 -->
-                    <a href="item1.html">
-                        <div class="item_container">
-                            <img src="assets/items/sweats2.png" alt="">
-                            <div class="details">
-                                <button class="add2cart">add to cart</button>
-                                <p>Example pants <br> £68</p>
-                            </div>
-                        </div>
-                    </a>
+
                 </div>
 
             </div>
