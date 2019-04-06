@@ -11,25 +11,25 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $("#img").animate({
-                    top: 65
+                    'top': '16vw'
                 }, 900)
             }, 800);
 
             setTimeout(function () {
                 $("#store").animate({
-                    top: 0
+                    'top': 0
                 }, {
-                    duration: 300,
-                    queue: false
+                    'duration': 100,
+                    'queue': false
                 });
-                $("#store").fadeIn({
-                    duration: 450,
-                    queue: false
-                });
-            }, 1400);
+            }, 1000);
             setTimeout(function () {
                 $("#nav").fadeIn({
-                    duration: 250
+                    'duration': 1000
+                });
+                $("#store").fadeIn({
+                    'duration': 500,
+                    'queue': true
                 });
             }, 1800);
         });
