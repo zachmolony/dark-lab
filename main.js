@@ -1,8 +1,9 @@
 $(document).ready(function () {
-    if (!sessionStorage.getItem('firstLoad')) {
+    if (sessionStorage.getItem('firstLoad')) {
         $('#header').css('display', 'none');
         $('#store').css({'top':'0', 'display':'block'});
         $('#nav').css('display', 'block');
+        $('#img').css('top', '16vw');
     } else {
         $(".button").click(function () {
             sessionStorage.setItem('firstLoad',  true);
