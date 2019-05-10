@@ -107,9 +107,12 @@
 
   #header {
       position: absolute;
-      padding-top: 4vh;
-      left: 0;
-      right: 0;
+      padding-top: 9vh;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
       margin-left: auto;
       margin-right: auto;
       width: 100vw;
