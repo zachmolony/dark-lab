@@ -10,7 +10,7 @@ $(document).ready(function () {
             $(".button").fadeOut();
 
             setTimeout(function () {
-                $("#img").animate({
+                $("#logo").animate({
                     top: 65
                 }, 900)
             }, 800);
@@ -27,6 +27,7 @@ $(document).ready(function () {
                     queue: false
                 });
             }, 1400);
+            
             setTimeout(function () {
                 $("#nav").fadeIn({
                     duration: 250

@@ -40,12 +40,12 @@
     <script>
         $(document).ready(function () {
             $(".button").click(function () {
-                $("#img").fadeOut();
+                $("#logo").fadeOut();
                 $(".button").fadeOut();
 
                 setTimeout(function () {
-                    $(".skull").animate({
-                        top: 950
+                    $("#skull").animate({
+                        marginBottom: 250
                     });
                 }, 1000);
 
@@ -74,20 +74,6 @@
     <div id="content">
 
         <div class="desktop">
-
-            <img id="background" src="assets/sky.gif" alt="">
-
-            <div id="showcase">
-                <div class="skull">
-                    <img src="assets/skull.gif" alt="">
-                </div>
-
-                <img id="textlogo" src="assets/logo-rough.png" alt="">
-                <div id="enter">
-                    <a id="enter" href="#" class="button">enter email.</a>
-                </div>
-
-            </div>
         </div>
 
 
@@ -107,12 +93,14 @@
                     <img id="cart" src="assets/carticon.png" alt="">
                 </div>
 
-                <div class="skull">
-                    <img src="assets/skull.gif" alt="">
-                </div>
+                
 
                 <div id="header">
-                    <img id="img" src="assets/logo-rough.png" alt="">
+                    <div class="skull">
+                            <img src="assets/skull.gif" alt="spinning skull" id="skull">
+                    </div>
+
+                    <img id="logo" src="assets/logo-rough.png" alt="">
 
                     <a href="#" class="button">enter email.</a>
                 </div>

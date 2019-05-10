@@ -86,6 +86,7 @@
   .skull * {
       margin-bottom: 125px;
       width: 35vw;
+      padding-bottom: 10px;
   }
 
   .skull {
@@ -96,18 +97,19 @@
       -moz-transform: translateX(-50%) translateY(-50%);
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
   }
 
-  #img {
+  #logo {
       position: relative;
       width: 56%;
-      padding-top: 56px;
+      padding-top: 200px;
       filter: invert(100);
   }
 
   #header {
       position: absolute;
-      padding-top: 9vh;
+      padding-top: 0vh;
       top: 50%;
       left: 50%;
       -moz-transform: translateX(-50%) translateY(-50%);
@@ -120,8 +122,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      height: auto;
   }
 
   .form {
